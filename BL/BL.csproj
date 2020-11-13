@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InvoiceClientManager.cs" />
+    <Compile Include="InvoiceReceivingClientManager.cs" />
+    <Compile Include="InvoiceReceivingSupplierManager.cs" />
+    <Compile Include="InvoiceSupplierManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserManager.cs" />
   </ItemGroup>

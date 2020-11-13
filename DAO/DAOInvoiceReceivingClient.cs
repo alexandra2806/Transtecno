@@ -40,7 +40,7 @@ namespace DAO
             }
         }
 
-        public int VerifyInvoiceReceivingClient(string id)
+        private int VerifyInvoiceReceivingClient(string id)
         {
             String query = "Select count(0) from DESTINATARIO_FACTURA_CLIENTE where ID_CLIENTE = @idClient ";
             int verify;

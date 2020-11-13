@@ -8,7 +8,7 @@ using DOM;
 
 namespace DAO
 {
-    class DAOInvoiceSupplier
+    public class DAOInvoiceSupplier
     {
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connString);
 

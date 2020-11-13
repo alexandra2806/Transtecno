@@ -8,7 +8,7 @@ using DOM;
 
 namespace DAO
 {
-    class DAOInvoiceReceivingSupplier
+    public class DAOInvoiceReceivingSupplier
     {
         SqlConnection conn = new SqlConnection(Properties.Settings.Default.connString);
         public Boolean InsertInvoiceReceivingSupplier(InvoiceReceivingSupplier invR)
@@ -40,7 +40,7 @@ namespace DAO
             }
         }
 
-        public int VerifyInvoiceReceivingSupplier(string id)
+        private int VerifyInvoiceReceivingSupplier(string id)
         {
             String query = "Select count(0) from DESTINATARIO_FACTURA_PROVEEDOR where ID_PROVEEDOR = @idProveedor";
             int verify;
